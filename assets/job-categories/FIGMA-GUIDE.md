@@ -1,16 +1,28 @@
 # راهنمای ایمپورت گرافیک‌های دسته‌بندی شغلی در Figma
 
-## فایل‌ها
+## دو نسخه موجود
 
-| دسته‌بندی | SVG (توصیه‌شده) | PNG 1x | PNG 2x |
-|-----------|-----------------|--------|--------|
-| طراحی | `svg/design.svg` | `png/design.png` | `png/design@2x.png` |
-| بازاریابی | `svg/marketing.svg` | `png/marketing.png` | `png/marketing@2x.png` |
-| منابع انسانی | `svg/hr.svg` | `png/hr.png` | `png/hr@2x.png` |
-| آموزشی | `svg/education.svg` | `png/education.png` | `png/education@2x.png` |
-| برنامه‌نویسی | `svg/programming.svg` | `png/programming.png` | `png/programming@2x.png` |
+### ۱. ایلاستریشن فلت (پیشنهادی)
+سبک مدرن flat illustration — مناسب کارت‌های دسته‌بندی سایت
 
-همه آیکون‌ها در یک فایل: `svg/all-categories.svg`
+| دسته‌بندی | SVG وکتور | PNG ایلاستریشن | PNG کارت ۴۰۰px |
+|-----------|-----------|----------------|----------------|
+| طراحی | `illustrations/svg/design.svg` | `illustrations/png/design-ai.png` | `illustrations/png/design-illustration-card.png` |
+| بازاریابی | `illustrations/svg/marketing.svg` | `illustrations/png/marketing-ai.png` | `illustrations/png/marketing-illustration-card.png` |
+| منابع انسانی | `illustrations/svg/hr.svg` | `illustrations/png/hr-ai.png` | `illustrations/png/hr-illustration-card.png` |
+| آموزشی | `illustrations/svg/education.svg` | `illustrations/png/education-ai.png` | `illustrations/png/education-illustration-card.png` |
+| برنامه‌نویسی | `illustrations/svg/programming.svg` | `illustrations/png/programming-ai.png` | `illustrations/png/programming-illustration-card.png` |
+
+نسخه SVG فلت (قابل ویرایش): `illustrations/png/*-flat-card.png` و `*-flat@2x.png`
+
+### ۲. آیکون ساده (نسخه قبلی)
+| دسته‌بندی | SVG | PNG |
+|-----------|-----|-----|
+| طراحی | `svg/design.svg` | `png/design.png` |
+| بازاریابی | `svg/marketing.svg` | `png/marketing.png` |
+| منابع انسانی | `svg/hr.svg` | `png/hr.png` |
+| آموزشی | `svg/education.svg` | `png/education.png` |
+| برنامه‌نویسی | `svg/programming.svg` | `png/programming.png` |
 
 ## پالت رنگ
 
