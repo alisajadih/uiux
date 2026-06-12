@@ -7,16 +7,8 @@
   <style>
     @font-face {
       font-family: 'IRANSansX';
-      src: url('./fonts/IRANSansX-Regular.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'IRANSansX';
       src: url('./fonts/IRANSansX-Bold.ttf') format('truetype');
       font-weight: 700;
-      font-style: normal;
       font-display: swap;
     }
 
@@ -32,10 +24,8 @@
       position: relative;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 24px;
+      align-items: stretch;
       min-height: 500px;
-      padding: 48px 80px;
       border-radius: 20px;
       overflow: hidden;
       background: linear-gradient(90deg, #115E59 0%, #8B5CF6 100%);
@@ -43,78 +33,49 @@
       margin: 0 auto;
     }
 
-    .hero::before,
-    .hero::after {
+    /* Empty zone — add your text here */
+    .hero__text-zone {
+      position: relative;
+      min-height: 500px;
+    }
+
+    .hero__text-zone::before {
       content: '';
       position: absolute;
+      width: 260px;
+      height: 260px;
+      top: -60px;
+      left: -40px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.08);
       pointer-events: none;
     }
 
-    .hero::before {
-      width: 280px;
-      height: 280px;
-      top: -80px;
-      left: -60px;
-    }
-
-    .hero::after {
-      width: 320px;
-      height: 320px;
-      bottom: -120px;
-      right: 35%;
-    }
-
-    .hero__content {
-      position: relative;
-      z-index: 2;
-      color: #fff;
-      direction: rtl;
-      text-align: right;
-      justify-self: start;
-    }
-
-    .hero__title {
-      font-size: clamp(28px, 4vw, 48px);
-      font-weight: 700;
-      line-height: 1.45;
-    }
-
     .hero__art {
-      position: relative;
-      z-index: 2;
       display: flex;
-      justify-content: flex-end;
       align-items: center;
-      justify-self: end;
+      justify-content: flex-end;
     }
 
     .hero__art img {
       width: 100%;
-      max-width: 620px;
-      height: auto;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center;
     }
 
     @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-        padding: 32px 24px;
-        min-height: auto;
-      }
-      .hero__content { justify-self: center; text-align: center; }
-      .hero__art { justify-self: center; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero__text-zone { min-height: 120px; }
+      .hero__art img { object-fit: contain; max-height: 320px; }
     }
   </style>
 </head>
 <body>
   <section class="hero" aria-label="بنر صفحه اصلی">
-    <div class="hero__content">
-      <h1 class="hero__title">بهترین فرصت‌های شغلی در انتظار شماست!</h1>
-    </div>
+    <div class="hero__text-zone" aria-label="محل قرارگیری متن"></div>
     <div class="hero__art">
-      <img src="./png/hero-illustration.png" alt="ایلاستریشن کاریابی" />
+      <img src="./png/hero-graphic.png" alt="ایلاستریشن کاریابی" />
     </div>
   </section>
 </body>

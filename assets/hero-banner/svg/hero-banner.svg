@@ -4,23 +4,14 @@
       <stop stop-color="#115E59"/>
       <stop offset="1" stop-color="#8B5CF6"/>
     </linearGradient>
-    <radialGradient id="glow-left" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 80) rotate(90) scale(220)">
-      <stop stop-color="white" stop-opacity="0.14"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow-right" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1280 420) rotate(90) scale(260)">
+    <radialGradient id="glow-left" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 120) rotate(90) scale(200)">
       <stop stop-color="white" stop-opacity="0.1"/>
       <stop offset="1" stop-color="white" stop-opacity="0"/>
     </radialGradient>
   </defs>
+  <!-- Empty text zone (left ~48%) — add your IRANSansX text in Figma -->
   <rect width="1440" height="500" fill="url(#hero-bg)"/>
-  <rect width="1440" height="500" fill="url(#glow-left)"/>
-  <rect width="1440" height="500" fill="url(#glow-right)"/>
-  <!-- Illustration placeholder area -->
-  <image href="../png/hero-illustration.png" x="720" y="20" width="700" height="460" preserveAspectRatio="xMaxYMid meet"/>
-  <!-- Headline: set font to IRANSansX in Figma after import -->
-  <text x="80" y="210" fill="white" font-family="IRANSansX, IRANSans, Tahoma, sans-serif" font-size="48" font-weight="700" direction="rtl">
-    <tspan x="640" dy="0">(G*1ÌF A15*G'Ì 4:DÌ</tspan>
-    <tspan x="640" dy="68">/1 'F*8'1 4E'3*!</tspan>
-  </text>
+  <rect width="700" height="500" fill="url(#glow-left)"/>
+  <!-- RTL illustration (right side) -->
+  <image href="../png/hero-graphic.png" x="620" y="0" width="820" height="500" preserveAspectRatio="xMaxYMid meet"/>
 </svg>
