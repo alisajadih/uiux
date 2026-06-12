@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-programming" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="accent-programming" x1="50" y1="60" x2="150" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#99F6E4"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="88" fill="url(#bg-programming)"/>
+  <circle cx="100" cy="100" r="88" fill="white" fill-opacity="0.08"/>
+  <!-- Terminal window -->
+  <rect x="48" y="58" width="104" height="84" rx="12" fill="white" fill-opacity="0.95"/>
+  <circle cx="66" cy="74" r="5" fill="#14B8A6"/>
+  <circle cx="82" cy="74" r="5" fill="#2DD4BF"/>
+  <circle cx="98" cy="74" r="5" fill="#8B5CF6"/>
+  <!-- Code lines -->
+  <rect x="60" y="90" width="48" height="6" rx="3" fill="url(#accent-programming)"/>
+  <rect x="60" y="104" width="72" height="6" rx="3" fill="#14B8A6" fill-opacity="0.5"/>
+  <rect x="60" y="118" width="36" height="6" rx="3" fill="#8B5CF6" fill-opacity="0.5"/>
+  <!-- Brackets -->
+  <path d="M38 100L52 88V112L38 100Z" fill="white"/>
+  <path d="M162 100L148 88V112L162 100Z" fill="white"/>
+  <!-- Cursor -->
+  <rect x="100" y="116" width="8" height="10" rx="1" fill="#8B5CF6"/>
+</svg>
