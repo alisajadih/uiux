@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Banner Preview</title>
+  <style>
+    @font-face {
+      font-family: 'IRANSansX';
+      src: url('./fonts/IRANSansX-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'IRANSansX';
+      src: url('./fonts/IRANSansX-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'IRANSansX', Tahoma, sans-serif;
+      background: #f1f5f9;
+      padding: 24px;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 24px;
+      min-height: 500px;
+      padding: 48px 80px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: linear-gradient(90deg, #115E59 0%, #8B5CF6 100%);
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 280px;
+      height: 280px;
+      top: -80px;
+      left: -60px;
+    }
+
+    .hero::after {
+      width: 320px;
+      height: 320px;
+      bottom: -120px;
+      right: 35%;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      direction: rtl;
+      text-align: right;
+      justify-self: start;
+    }
+
+    .hero__title {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .hero__art {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      justify-self: end;
+    }
+
+    .hero__art img {
+      width: 100%;
+      max-width: 620px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+        min-height: auto;
+      }
+      .hero__content { justify-self: center; text-align: center; }
+      .hero__art { justify-self: center; }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero" aria-label="بنر صفحه اصلی">
+    <div class="hero__content">
+      <h1 class="hero__title">بهترین فرصت‌های شغلی در انتظار شماست!</h1>
+    </div>
+    <div class="hero__art">
+      <img src="./png/hero-illustration.png" alt="ایلاستریشن کاریابی" />
+    </div>
+  </section>
+</body>
+</html>
