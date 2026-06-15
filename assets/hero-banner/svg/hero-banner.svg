@@ -1,0 +1,17 @@
+<svg width="1440" height="500" viewBox="0 0 1440 500" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="hero-bg" x1="0" y1="250" x2="1440" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#115E59"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="glow-left" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 120) rotate(90) scale(200)">
+      <stop stop-color="white" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Empty text zone (left ~48%) — add your IRANSansX text in Figma -->
+  <rect width="1440" height="500" fill="url(#hero-bg)"/>
+  <rect width="700" height="500" fill="url(#glow-left)"/>
+  <!-- RTL illustration (right side) -->
+  <image href="../png/hero-graphic.png" x="620" y="0" width="820" height="500" preserveAspectRatio="xMaxYMid meet"/>
+</svg>

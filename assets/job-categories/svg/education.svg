@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-education" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D9488"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="accent-education" x1="50" y1="70" x2="150" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#DDD6FE"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="88" fill="url(#bg-education)"/>
+  <circle cx="100" cy="100" r="88" fill="white" fill-opacity="0.08"/>
+  <!-- Graduation cap -->
+  <path d="M100 54L44 78L100 102L156 78L100 54Z" fill="white" fill-opacity="0.95"/>
+  <path d="M124 90V118" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="124" cy="122" r="6" fill="#8B5CF6"/>
+  <!-- Book -->
+  <path d="M64 118H136C140 118 144 122 144 126V154C144 158 140 162 136 162H64C60 162 56 158 56 154V126C56 122 60 118 64 118Z" fill="url(#accent-education)"/>
+  <path d="M100 118V162" stroke="white" stroke-width="3" stroke-opacity="0.6"/>
+  <path d="M68 132H92M68 144H88" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.8"/>
+  <path d="M108 132H132M108 144H128" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.8"/>
+</svg>
