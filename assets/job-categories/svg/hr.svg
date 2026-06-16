@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-hr" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="accent-hr" x1="60" y1="60" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#99F6E4"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="88" fill="url(#bg-hr)"/>
+  <circle cx="100" cy="100" r="88" fill="white" fill-opacity="0.08"/>
+  <!-- Center person -->
+  <circle cx="100" cy="72" r="18" fill="white" fill-opacity="0.95"/>
+  <path d="M68 138C72 112 84 104 100 104C116 104 128 112 132 138" fill="white" fill-opacity="0.95"/>
+  <!-- Left person -->
+  <circle cx="58" cy="88" r="14" fill="url(#accent-hr)"/>
+  <path d="M38 138C40 118 48 112 58 112C66 112 72 116 74 124" fill="url(#accent-hr)" fill-opacity="0.9"/>
+  <!-- Right person -->
+  <circle cx="142" cy="88" r="14" fill="url(#accent-hr)"/>
+  <path d="M126 124C128 116 134 112 142 112C152 112 160 118 162 138" fill="url(#accent-hr)" fill-opacity="0.9"/>
+  <!-- Connection ring -->
+  <ellipse cx="100" cy="118" rx="62" ry="28" stroke="white" stroke-width="3" stroke-opacity="0.35" fill="none"/>
+</svg>

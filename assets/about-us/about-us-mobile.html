@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=402, initial-scale=1.0" />
+  <title>درباره ما</title>
+  <style>
+    @font-face {
+      font-family: 'IRANSansX';
+      src: url('./fonts/IRANSansX-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'IRANSansX';
+      src: url('./fonts/IRANSansX-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-display: swap;
+    }
+
+    :root {
+      --primary: #00BBA7;
+      --secondary: #AD46FF;
+      --text: #1E293B;
+      --muted: #64748B;
+      --bg: #F8FAFC;
+      --white: #FFFFFF;
+      --primary-soft: #CCFBF1;
+      --secondary-soft: #F3E8FF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'IRANSansX', Tahoma, sans-serif;
+      background: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      padding: 16px 0;
+      color: var(--text);
+    }
+
+    .page {
+      width: 402px;
+      min-height: 100vh;
+      background: var(--bg);
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      background: var(--white);
+      border-bottom: 1px solid #E2E8F0;
+    }
+
+    .header__back {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: none;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .header__title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .header__spacer { width: 36px; }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 20px 20px 0;
+      background: linear-gradient(180deg, var(--primary-soft) 0%, var(--bg) 100%);
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(173,70,255,0.12);
+    }
+
+    .hero__badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .hero__title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .hero__title span {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero__desc {
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .hero__img-wrap {
+      background: var(--primary-soft);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+
+    .hero__img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 16px 20px;
+      margin-top: -8px;
+    }
+
+    .stat {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 14px 10px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    .stat__num {
+      font-size: 20px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 4px;
+    }
+
+    .stat__label {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* Section */
+    .section {
+      padding: 20px;
+    }
+
+    .section__title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    .section__title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 16px;
+      background: linear-gradient(180deg, var(--primary), var(--secondary));
+      border-radius: 2px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    /* Mission card */
+    .mission {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      border-radius: 16px;
+      padding: 20px;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .mission__label {
+      font-size: 11px;
+      opacity: 0.85;
+      margin-bottom: 6px;
+    }
+
+    .mission__text {
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* Values */
+    .values {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .value {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+
+    .value__icon {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .value__icon--teal { background: var(--primary-soft); }
+    .value__icon--purple { background: var(--secondary-soft); }
+
+    .value__title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .value__desc {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    /* Timeline / story */
+    .story {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    .story p {
+      font-size: 13px;
+      line-height: 1.9;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .story p:last-child { margin-bottom: 0; }
+
+    /* Team pills */
+    .team-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .team-pill {
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .team-pill--teal {
+      background: var(--primary-soft);
+      color: #0D9488;
+    }
+
+    .team-pill--purple {
+      background: var(--secondary-soft);
+      color: #7C3AED;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 20px;
+      padding-bottom: 32px;
+    }
+
+    .cta__btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 14px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: var(--white);
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,187,167,0.3);
+    }
+
+    .cta__sub {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    /* Bottom nav hint */
+    .footer-note {
+      text-align: center;
+      padding: 0 20px 24px;
+      font-size: 11px;
+      color: #94A3B8;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <button class="header__back" aria-label="بازگشت">›</button>
+      <h1 class="header__title">درباره ما</h1>
+      <div class="header__spacer"></div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        پلتفرم کاریابی هوشمند
+      </div>
+      <h2 class="hero__title">
+        ما پلیم میان <span>استعداد</span> و <span>فرصت</span>
+      </h2>
+      <p class="hero__desc">
+        با هدف تسهیل مسیر استخدام و کشف فرصت‌های شغلی مناسب، تیمی از متخصصان حوزه منابع انسانی و فناوری گرد هم آمده‌ایم.
+      </p>
+      <div class="hero__img-wrap">
+        <img class="hero__img" src="./png/about-illustration.png" alt="تیم ما" />
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat__num">+۵۰۰</div>
+        <div class="stat__label">آگهی فعال</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">+۱۲۰</div>
+        <div class="stat__label">شرکت همکار</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">+۱۰K</div>
+        <div class="stat__label">کاربر فعال</div>
+      </div>
+    </div>
+
+    <section class="section">
+      <h3 class="section__title">ماموریت ما</h3>
+      <div class="mission">
+        <div class="mission__label">🎯 ماموریت</div>
+        <p class="mission__text">
+          ایجاد بستری شفاف، سریع و قابل اعتماد برای اتصال کارجویان و کارفرمایان؛ جایی که هر فرد بتواند شغل متناسب با توانایی‌هایش را پیدا کند.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <h3 class="section__title">ارزش‌های ما</h3>
+      <div class="values">
+        <div class="value">
+          <div class="value__icon value__icon--teal">🤝</div>
+          <div>
+            <div class="value__title">اعتماد و شفافیت</div>
+            <div class="value__desc">اطلاعات آگهی‌ها و شرکت‌ها را با دقت بررسی می‌کنیم تا تجربه‌ای امن برای شما بسازیم.</div>
+          </div>
+        </div>
+        <div class="value">
+          <div class="value__icon value__icon--purple">⚡</div>
+          <div>
+            <div class="value__title">سرعت و سادگی</div>
+            <div class="value__desc">فرآیند جستجو و ارسال رزومه را تا حد ممکن ساده و سریع طراحی کرده‌ایم.</div>
+          </div>
+        </div>
+        <div class="value">
+          <div class="value__icon value__icon--teal">💡</div>
+          <div>
+            <div class="value__title">نوآوری مستمر</div>
+            <div class="value__desc">با ابزارهای هوشمند، بهترین فرصت‌ها را بر اساس مهارت و علاقه شما پیشنهاد می‌دهیم.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <h3 class="section__title">داستان ما</h3>
+      <div class="story">
+        <p>
+          ایده این پلتفرم از تجربه‌های واقعی جستجوی شغل شکل گرفت؛ جایی که کارجویان زمان زیادی صرف یافتن آگهی‌های معتبر می‌کردند و کارفرمایان به نیروی متخصص مناسب دسترسی سخت‌تری داشتند.
+        </p>
+        <p>
+          امروز با تیمی متشکل از مشاوران منابع انسانی، طراحان تجربه کاربری و توسعه‌دهندگان، در حال ساختن آینده‌ای بهتر برای بازار کار ایران هستیم.
+        </p>
+        <div class="team-row">
+          <span class="team-pill team-pill--teal">منابع انسانی</span>
+          <span class="team-pill team-pill--purple">فناوری</span>
+          <span class="team-pill team-pill--teal">طراحی UX</span>
+          <span class="team-pill team-pill--purple">پشتیبانی</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <button class="cta__btn">شروع جستجوی شغل</button>
+      <p class="cta__sub">به جمع هزاران کارجوی موفق بپیوندید</p>
+    </div>
+
+    <p class="footer-note">نسخه ۱.۰ · ۱۴۰۵</p>
+  </div>
+</body>
+</html>

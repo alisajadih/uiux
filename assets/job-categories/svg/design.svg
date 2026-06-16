@@ -1,0 +1,24 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-design" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="accent-design" x1="70" y1="60" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#99F6E4"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="88" fill="url(#bg-design)"/>
+  <circle cx="100" cy="100" r="88" fill="white" fill-opacity="0.08"/>
+  <!-- Palette -->
+  <path d="M100 48C72 48 52 68 52 94C52 108 60 118 72 122C78 124 82 128 82 134C82 142 76 148 68 148H64C58 148 54 152 54 158C54 164 58 168 64 168H136C142 168 146 164 146 158C146 152 142 148 136 148H132C124 148 118 142 118 134C118 128 122 124 128 122C140 118 148 108 148 94C148 68 128 48 100 48Z" fill="white" fill-opacity="0.95"/>
+  <!-- Color dots -->
+  <circle cx="78" cy="82" r="10" fill="#14B8A6"/>
+  <circle cx="100" cy="74" r="10" fill="#2DD4BF"/>
+  <circle cx="122" cy="82" r="10" fill="#8B5CF6"/>
+  <circle cx="100" cy="100" r="10" fill="#A78BFA"/>
+  <!-- Brush -->
+  <rect x="128" y="118" width="14" height="36" rx="4" transform="rotate(35 128 118)" fill="url(#accent-design)"/>
+  <path d="M148 148L162 162" stroke="white" stroke-width="6" stroke-linecap="round"/>
+</svg>

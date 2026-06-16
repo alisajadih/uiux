@@ -1,0 +1,10 @@
+<svg width="402" height="210" viewBox="0 0 402 210" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="hero-bg" x1="0" y1="105" x2="402" y2="105" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00BBA7"/>
+      <stop offset="1" stop-color="#AD46FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="402" height="210" fill="url(#hero-bg)"/>
+  <image href="../png/hero-graphic-402x210.png" x="193" y="0" width="209" height="210" preserveAspectRatio="xMaxYMid meet"/>
+</svg>

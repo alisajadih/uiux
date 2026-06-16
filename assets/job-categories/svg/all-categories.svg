@@ -1,0 +1,69 @@
+<svg width="1000" height="200" viewBox="0 0 1000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#99F6E4"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <!-- Design -->
+  <g transform="translate(0,0)">
+    <circle cx="100" cy="100" r="88" fill="url(#bg)"/>
+    <path d="M100 48C72 48 52 68 52 94C52 108 60 118 72 122C78 124 82 128 82 134C82 142 76 148 68 148H64C58 148 54 152 54 158C54 164 58 168 64 168H136C142 168 146 164 146 158C146 152 142 148 136 148H132C124 148 118 142 118 134C118 128 122 124 128 122C140 118 148 108 148 94C148 68 128 48 100 48Z" fill="white" fill-opacity="0.95"/>
+    <circle cx="78" cy="82" r="10" fill="#14B8A6"/>
+    <circle cx="100" cy="74" r="10" fill="#2DD4BF"/>
+    <circle cx="122" cy="82" r="10" fill="#8B5CF6"/>
+    <circle cx="100" cy="100" r="10" fill="#A78BFA"/>
+    <rect x="128" y="118" width="14" height="36" rx="4" transform="rotate(35 128 118)" fill="url(#accent)"/>
+    <path d="M148 148L162 162" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- Marketing -->
+  <g transform="translate(200,0)">
+    <circle cx="100" cy="100" r="88" fill="url(#bg)"/>
+    <path d="M52 88C52 80 58 74 66 74H88L132 52V148L88 126H66C58 126 52 120 52 112V88Z" fill="white" fill-opacity="0.95"/>
+    <rect x="44" y="84" width="16" height="32" rx="6" fill="url(#accent)"/>
+    <path d="M142 78C152 86 158 98 158 100C158 102 152 114 142 122" stroke="white" stroke-width="5" stroke-linecap="round"/>
+    <path d="M154 66C168 78 176 96 176 100C176 104 168 122 154 134" stroke="white" stroke-width="5" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M72 108L88 96L100 104L116 86" stroke="#14B8A6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="116" cy="86" r="5" fill="#8B5CF6"/>
+  </g>
+  <!-- HR -->
+  <g transform="translate(400,0)">
+    <circle cx="100" cy="100" r="88" fill="url(#bg)"/>
+    <circle cx="100" cy="72" r="18" fill="white" fill-opacity="0.95"/>
+    <path d="M68 138C72 112 84 104 100 104C116 104 128 112 132 138" fill="white" fill-opacity="0.95"/>
+    <circle cx="58" cy="88" r="14" fill="url(#accent)"/>
+    <path d="M38 138C40 118 48 112 58 112C66 112 72 116 74 124" fill="url(#accent)" fill-opacity="0.9"/>
+    <circle cx="142" cy="88" r="14" fill="url(#accent)"/>
+    <path d="M126 124C128 116 134 112 142 112C152 112 160 118 162 138" fill="url(#accent)" fill-opacity="0.9"/>
+    <ellipse cx="100" cy="118" rx="62" ry="28" stroke="white" stroke-width="3" stroke-opacity="0.35" fill="none"/>
+  </g>
+  <!-- Education -->
+  <g transform="translate(600,0)">
+    <circle cx="100" cy="100" r="88" fill="url(#bg)"/>
+    <path d="M100 54L44 78L100 102L156 78L100 54Z" fill="white" fill-opacity="0.95"/>
+    <path d="M124 90V118" stroke="white" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="124" cy="122" r="6" fill="#8B5CF6"/>
+    <path d="M64 118H136C140 118 144 122 144 126V154C144 158 140 162 136 162H64C60 162 56 158 56 154V126C56 122 60 118 64 118Z" fill="url(#accent)"/>
+    <path d="M100 118V162" stroke="white" stroke-width="3" stroke-opacity="0.6"/>
+    <path d="M68 132H92M68 144H88" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.8"/>
+    <path d="M108 132H132M108 144H128" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.8"/>
+  </g>
+  <!-- Programming -->
+  <g transform="translate(800,0)">
+    <circle cx="100" cy="100" r="88" fill="url(#bg)"/>
+    <rect x="48" y="58" width="104" height="84" rx="12" fill="white" fill-opacity="0.95"/>
+    <circle cx="66" cy="74" r="5" fill="#14B8A6"/>
+    <circle cx="82" cy="74" r="5" fill="#2DD4BF"/>
+    <circle cx="98" cy="74" r="5" fill="#8B5CF6"/>
+    <rect x="60" y="90" width="48" height="6" rx="3" fill="url(#accent)"/>
+    <rect x="60" y="104" width="72" height="6" rx="3" fill="#14B8A6" fill-opacity="0.5"/>
+    <rect x="60" y="118" width="36" height="6" rx="3" fill="#8B5CF6" fill-opacity="0.5"/>
+    <path d="M38 100L52 88V112L38 100Z" fill="white"/>
+    <path d="M162 100L148 88V112L162 100Z" fill="white"/>
+    <rect x="100" y="116" width="8" height="10" rx="1" fill="#8B5CF6"/>
+  </g>
+</svg>
